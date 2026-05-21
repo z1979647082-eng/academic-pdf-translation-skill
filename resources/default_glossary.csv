@@ -1,0 +1,244 @@
+English,Chinese,Abbreviation,Note
+cellulose,纤维素,,生物质主要组分
+lignin,木质素,,生物质主要组分
+hemicellulose,半纤维素,,生物质主要组分
+biomass,生物质,,总称
+lignocellulosic biomass,木质纤维素生物质,,常用于生物质预处理文献
+lignocellulose,木质纤维素,,生物质结构总称
+cell wall,细胞壁,,植物细胞壁
+primary cell wall,初生细胞壁,,植物细胞壁结构
+secondary cell wall,次生细胞壁,,植物细胞壁结构
+microfibril,微纤丝,,纤维素结构
+cellulose microfibril,纤维素微纤丝,,纤维素聚集结构
+amorphous region,无定形区,,纤维素结构
+crystalline region,结晶区,,纤维素结构
+crystallinity,结晶度,,材料结构参数
+crystallinity index,结晶指数,CrI,常见于XRD分析
+degree of polymerization,聚合度,DP,纤维素分子链长度指标
+molecular weight,分子量,,聚合物参数
+weight-average molecular weight,重均分子量,Mw,聚合物参数
+number-average molecular weight,数均分子量,Mn,聚合物参数
+polydispersity index,多分散系数,PDI,聚合物参数
+dissolving pulp,溶解浆,,高纯纤维素原料
+pulp,纸浆,,根据上下文可译为浆料或纸浆
+bleached pulp,漂白浆,,纸浆类型
+kraft pulp,硫酸盐浆,,制浆类型
+sulfite pulp,亚硫酸盐浆,,制浆类型
+cotton linter,棉短绒,,纤维素原料
+microcrystalline cellulose,微晶纤维素,MCC,常用纤维素原料
+nanocellulose,纳米纤维素,,总称
+cellulose nanofibril,纤维素纳米纤丝,CNF,纳米纤维素类型
+cellulose nanocrystal,纤维素纳米晶,CNC,纳米纤维素类型
+bacterial cellulose,细菌纤维素,BC,纤维素类型
+regenerated cellulose,再生纤维素,,溶解后再生得到
+cellulose acetate,醋酸纤维素,CA,纤维素衍生物
+acetylation,乙酰化,,化学改性
+esterification,酯化,,化学反应
+etherification,醚化,,化学反应
+oxidation,氧化,,化学反应
+carboxylation,羧基化,,化学改性
+carboxymethylation,羧甲基化,,纤维素改性
+depolymerization,解聚,,聚合物链断裂
+degradation,降解,,材料或分子降解
+hydrolysis,水解,,化学或酶促反应
+acid hydrolysis,酸水解,,酸处理
+enzymatic hydrolysis,酶解,,酶促水解
+alkaline treatment,碱处理,,NaOH等处理
+acid treatment,酸处理,,酸体系处理
+pretreatment,预处理,,实验处理过程
+deep eutectic solvent,深共熔溶剂,DES,第一次出现写作“深共熔溶剂（DES）”
+natural deep eutectic solvent,天然深共熔溶剂,NADES,第一次出现写作“天然深共熔溶剂（NADES）”
+DES,DES,DES,保留缩写
+NADES,NADES,NADES,保留缩写
+hydrogen bond donor,氢键供体,HBD,DES组成部分
+hydrogen bond acceptor,氢键受体,HBA,DES组成部分
+choline chloride,氯化胆碱,ChCl,常见氢键受体
+ChCl,ChCl,ChCl,保留缩写
+glycerol,甘油,GL,注意有些文献也写作Gly
+glycolic acid,乙醇酸,GA,注意根据上下文判断GA含义
+lactic acid,乳酸,LA,常见氢键供体
+oxalic acid,草酸,OA,常见氢键供体
+malic acid,苹果酸,MA,常见氢键供体
+citric acid,柠檬酸,CA,注意不要与cellulose acetate混淆
+urea,尿素,,常见氢键供体
+ethylene glycol,乙二醇,EG,常见氢键供体
+levulinic acid,乙酰丙酸,LevA,生物基酸
+formic acid,甲酸,FA,有机酸
+acetic acid,乙酸,AA,有机酸
+sulfuric acid,硫酸,H2SO4,酸水解常用
+hydrochloric acid,盐酸,HCl,酸处理
+phosphoric acid,磷酸,H3PO4,酸处理
+sodium hydroxide,氢氧化钠,NaOH,碱处理
+potassium hydroxide,氢氧化钾,KOH,碱处理
+hydrogen peroxide,过氧化氢,H2O2,氧化剂
+sodium chlorite,亚氯酸钠,NaClO2,脱木质素常用
+sodium hypochlorite,次氯酸钠,NaClO,氧化剂
+dioxane,二氧六环,,LCC或木质素抽提常用溶剂
+1,4-dioxane,1,4-二氧六环,,溶剂
+ethanol,乙醇,EtOH,溶剂
+methanol,甲醇,MeOH,溶剂
+acetone,丙酮,,溶剂
+dimethyl sulfoxide,二甲基亚砜,DMSO,溶剂
+N,N-dimethylacetamide,N,N-二甲基乙酰胺,DMAc,纤维素溶剂
+lithium chloride,氯化锂,LiCl,DMAc/LiCl体系
+ionic liquid,离子液体,IL,纤维素溶剂或预处理体系
+1-ethyl-3-methylimidazolium acetate,1-乙基-3-甲基咪唑乙酸盐,EmimAc,离子液体
+dissolution,溶解,,根据上下文也可译为“溶出”
+solubilization,溶出,,强调进入溶液
+swelling,溶胀,,纤维素或生物质结构变化
+regeneration,再生,,纤维素再生过程
+precipitation,沉淀,,再生或分离过程
+filtration,过滤,,实验操作
+centrifugation,离心,,实验操作
+washing,洗涤,,实验操作
+drying,干燥,,实验操作
+freeze-drying,冷冻干燥,,样品干燥方式
+oven-drying,烘干,,样品干燥方式
+vacuum drying,真空干燥,,样品干燥方式
+solid-liquid ratio,固液比,,实验条件
+reaction temperature,反应温度,,实验条件
+reaction time,反应时间,,实验条件
+stirring speed,搅拌速度,,实验条件
+water content,含水量,,体系参数
+moisture content,水分含量,,样品参数
+mass ratio,质量比,,实验配比
+molar ratio,摩尔比,,实验配比
+weight percent,质量百分比,wt%,常见浓度表示
+volume percent,体积百分比,vol%,常见浓度表示
+mass concentration,质量浓度,,浓度表示
+substrate,底物,,实验对象
+residue,残渣,,实验样品或剩余物
+supernatant,上清液,,离心后液相
+filtrate,滤液,,过滤后液相
+precipitate,沉淀物,,固相产物
+yield,得率,,实验结果指标
+recovery,回收率,,实验结果指标
+removal rate,去除率,,实验结果指标
+conversion,转化率,,反应指标
+selectivity,选择性,,反应指标
+purity,纯度,,样品指标
+ash content,灰分含量,,生物质组分分析
+extractives,抽提物,,生物质组分
+Klason lignin,Klason木质素,,酸不溶木质素
+acid-insoluble lignin,酸不溶木质素,AIL,木质素测定
+acid-soluble lignin,酸溶木质素,ASL,木质素测定
+holocellulose,综纤维素,,纤维素和半纤维素总称
+alpha-cellulose,α-纤维素,,纤维素纯度指标
+pentosan,戊聚糖,,半纤维素相关
+xylan,木聚糖,,半纤维素主要组分
+xylose,木糖,,单糖
+xylobiose,木二糖,,XOS组分
+xylooligosaccharide,低聚木糖,XOS,第一次出现写作“低聚木糖（XOS）”
+glucose,葡萄糖,,单糖
+cellobiose,纤维二糖,,纤维素水解产物
+arabinose,阿拉伯糖,,单糖
+mannose,甘露糖,,单糖
+galactose,半乳糖,,单糖
+glucan,葡聚糖,,多糖
+xylanase,木聚糖酶,,酶
+cellulase,纤维素酶,,酶
+β-glucosidase,β-葡萄糖苷酶,,酶
+α-glucosidase,α-葡萄糖苷酶,,酶
+lignin-carbohydrate complex,木质素-碳水化合物复合体,LCC,第一次出现写作“木质素-碳水化合物复合体（LCC）”
+LCC,LCC,LCC,保留缩写
+benzyl ether bond,苄醚键,,LCC连接键
+benzyl ester bond,苄酯键,,LCC连接键
+phenyl glycoside bond,苯基糖苷键,,LCC连接键
+ferulate bridge,阿魏酸桥联,,木质素-碳水化合物连接
+p-coumarate,对香豆酸酯,pCA,木质素相关结构
+ferulic acid,阿魏酸,FA,注意与formic acid缩写混淆
+syringyl unit,紫丁香基单元,S,木质素结构单元
+guaiacyl unit,愈创木基单元,G,木质素结构单元
+p-hydroxyphenyl unit,对羟基苯基单元,H,木质素结构单元
+S/G ratio,S/G比,,木质素结构参数
+β-O-4 linkage,β-O-4键,,木质素主要连接键
+β-β linkage,β-β键,,木质素连接键
+β-5 linkage,β-5键,,木质素连接键
+5-5 linkage,5-5键,,木质素连接键
+phenolic hydroxyl group,酚羟基,,木质素官能团
+aliphatic hydroxyl group,脂肪族羟基,,木质素官能团
+carboxyl group,羧基,,官能团
+carbonyl group,羰基,,官能团
+methoxy group,甲氧基,,木质素官能团
+hydrogen bond,氢键,,相互作用
+covalent bond,共价键,,化学键
+ether bond,醚键,,化学键
+ester bond,酯键,,化学键
+glycosidic bond,糖苷键,,多糖连接键
+cleavage,断裂,,化学键断裂
+condensation,缩合,,木质素反应
+repolymerization,再聚合,,木质素反应
+delignification,脱木质素,,预处理效果
+deconstruction,解构,,生物质结构破坏
+fractionation,组分分离,,生物质分级
+separation,分离,,通用术语
+isolation,分离提取,,强调获得目标组分
+extraction,抽提,,溶剂抽提
+purification,纯化,,样品处理
+characterization,表征,,材料分析
+Fourier-transform infrared spectroscopy,傅里叶变换红外光谱,FTIR,表征方法
+FTIR,FTIR,FTIR,保留缩写
+X-ray diffraction,X射线衍射,XRD,表征方法
+XRD,XRD,XRD,保留缩写
+nuclear magnetic resonance,核磁共振,NMR,表征方法
+NMR,NMR,NMR,保留缩写
+two-dimensional heteronuclear single quantum coherence NMR,二维异核单量子相干核磁共振,2D-HSQC NMR,木质素结构分析常用
+2D-HSQC NMR,2D-HSQC NMR,2D-HSQC NMR,保留缩写
+carbon-13 nuclear magnetic resonance,碳-13核磁共振,13C NMR,表征方法
+proton nuclear magnetic resonance,氢核磁共振,1H NMR,表征方法
+scanning electron microscopy,扫描电子显微镜,SEM,表征方法
+SEM,SEM,SEM,保留缩写
+transmission electron microscopy,透射电子显微镜,TEM,表征方法
+TEM,TEM,TEM,保留缩写
+atomic force microscopy,原子力显微镜,AFM,表征方法
+AFM,AFM,AFM,保留缩写
+thermogravimetric analysis,热重分析,TGA,表征方法
+TGA,TGA,TGA,保留缩写
+derivative thermogravimetry,微分热重分析,DTG,表征方法
+DTG,DTG,DTG,保留缩写
+differential scanning calorimetry,差示扫描量热法,DSC,表征方法
+DSC,DSC,DSC,保留缩写
+X-ray photoelectron spectroscopy,X射线光电子能谱,XPS,表征方法
+XPS,XPS,XPS,保留缩写
+gel permeation chromatography,凝胶渗透色谱,GPC,分子量测定
+GPC,GPC,GPC,保留缩写
+size exclusion chromatography,体积排阻色谱,SEC,分子量测定
+high-performance liquid chromatography,高效液相色谱,HPLC,分析方法
+HPLC,HPLC,HPLC,保留缩写
+gas chromatography-mass spectrometry,气相色谱-质谱联用,GC-MS,分析方法
+GC-MS,GC-MS,GC-MS,保留缩写
+pyrolysis gas chromatography-mass spectrometry,热裂解气相色谱-质谱联用,Py-GC/MS,木质素结构分析
+ultraviolet-visible spectroscopy,紫外-可见光谱,UV-vis,分析方法
+UV-vis,UV-vis,UV-vis,保留缩写
+specific surface area,比表面积,,材料性质
+pore size,孔径,,材料性质
+pore volume,孔体积,,材料性质
+surface morphology,表面形貌,,SEM常用
+thermal stability,热稳定性,,TGA常用
+thermal degradation,热降解,,TGA常用
+onset degradation temperature,起始降解温度,Tonset,热分析参数
+maximum degradation temperature,最大降解温度,Tmax,热分析参数
+residual char,残炭,,TGA残留物
+char residue,残炭率,,根据上下文也可译为残炭
+absorption peak,吸收峰,,FTIR
+characteristic peak,特征峰,,光谱分析
+peak intensity,峰强度,,光谱分析
+wavenumber,波数,,FTIR单位cm⁻¹
+chemical shift,化学位移,,NMR参数
+signal intensity,信号强度,,NMR或光谱
+diffraction peak,衍射峰,,XRD
+peak area,峰面积,,分析参数
+baseline,基线,,光谱或色谱
+calibration curve,标准曲线,,定量分析
+standard deviation,标准偏差,SD,统计指标
+relative standard deviation,相对标准偏差,RSD,统计指标
+analysis of variance,方差分析,ANOVA,统计方法
+significant difference,显著性差异,,统计表达
+p-value,p值,p,统计指标
+antioxidant activity,抗氧化活性,,功能性质
+DPPH radical scavenging activity,DPPH自由基清除活性,DPPH,抗氧化实验
+ABTS radical scavenging activity,ABTS自由基清除活性,ABTS,抗氧化实验
+reducing power,还原能力,,抗氧化实验
+IC50,半数抑制浓度,IC50,保留缩写
+inhibition rate,抑制率,,生物活性指标
+α-glucosidase inhibition,α-葡萄糖苷酶抑制,,活性评价

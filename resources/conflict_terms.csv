@@ -1,0 +1,5 @@
+Abbreviation,Possible Meanings,Chinese Options,Rule,Note
+GA,"glyoxylic acid; glycolic acid; glutaric acid; glyceraldehyde","乙醛酸; 乙醇酸; 戊二酸; 甘油醛","Must be determined from current-paper context","Do not use default meaning without context"
+CA,"cellulose acetate; citric acid; caffeic acid","醋酸纤维素; 柠檬酸; 咖啡酸","Must be determined from current-paper context","Ambiguous abbreviation"
+FA,"formic acid; ferulic acid; fumaric acid","甲酸; 阿魏酸; 富马酸","Must be determined from current-paper context","Ambiguous abbreviation"
+LA,"lactic acid; levulinic acid","乳酸; 乙酰丙酸","Must be determined from current-paper context","Ambiguous abbreviation"
