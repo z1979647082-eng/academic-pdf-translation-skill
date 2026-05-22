@@ -1,4 +1,3 @@
-元数据
 name
 academic-pdf-translation-skill
 description
@@ -101,7 +100,7 @@ Glossary Management Rules
 For each PDF, generate output/paper_glossary.csv.
 output/paper_glossary.csv has the highest priority for the current paper.
 Do not automatically merge paper_glossary.csv into resources/default_glossary.csv or resources/domain_glossary.csv.
-Instead, generate output/merge_candidates.csv containing only terms that are likely reusable across future papers and require user confirmation.
+Instead, generate output/merge_candidates.csvcontaining only terms that are likely reusable across future papers and require user confirmation.
 Classify each term as one of the following:
 • stable_general_term
 • domain_reusable_term
@@ -152,7 +151,7 @@ PDF generation must follow these rules:
 • C:\Windows\Fonts\msyh.ttc
 • C:\Windows\Fonts\simsun.ttc
 • C:\Windows\Fonts\simhei.ttf
-3. Do not use PyMuPDF insert_text or insert_textbox to write Chinese body text, because this may produce square boxes or missing glyphs.
+3. Do not use PyMuPDF insert_textor insert_textbox to write Chinese body text, because this may produce square boxes or missing glyphs.
 4. Insert each figure near the first body reference to that figure, such as the first occurrence of 图 1, 图 2, or 图 3.
 5. If a figure cannot be located reliably in the body, place it in a final figure plate section and explain the reason in the report.
 6. Center figures and keep them proportional.
