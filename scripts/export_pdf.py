@@ -97,3 +97,154 @@ def extract_chinese_title(markdown: str) -> str | None:
             if contains_chinese(candidate) and "作者" not in candidate:
                 return candidate
         break
+
+    for index, line in enumerate(lines):
+        candidate = clean_title_candidate(line)
+        if not candidate:
+            continue
+        if "文章标题翻译结果" in candidate or ("标题" in candidate and "翻译" in candidate):
+            if contains_chinese(candidate) and not candidate.endswith(("标题翻译", "翻译结果")):
+                return candidate
+            for following_line in lines[index + 1 : index + 5]:
+                following = clean_title_candidate(following_line)
+                if following and contains_chinese(following):
+                    return following
+
+    for line in lines:
+        candidate = clean_title_candidate(line)
+        if candidate.startswith("#"):
+            candidate = clean_title_candidate(candidate)
+        if contains_chinese(candidate) and len(candidate) >= 6 and not candidate.startswith("图"):
+            return candidate
+
+    return None
+
+
+def make_safe_chinese_filename_stem(title: str) -> str:
+    safe = clean_title_candidate(title).translate(WINDOWS_FILENAME_REPLACEMENTS)
+    safe = re.sub(r"\s+", "", safe)
+    safe = re.sub(r"_+", "_", safe)
+    return safe.strip(" ._")
+
+
+def make_safe_chinese_filename(title: str) -> str:
+    safe_stem = make_safe_chinese_filename_stem(title)
+    if not safe_stem:
+        return ""
+    return f"{safe_stem[:60]}.pdf"
+
+
+def make_unique_output_path(output_dir: Path, filename: str, fixed_output_path: Path) -> Path:
+    base = Path(filename).stem
+    suffix = Path(filename).suffix or ".pdf"
+    candidate = output_dir / f"{base}{suffix}"
+    fixed_resolved = fixed_output_path.resolve()
+    counter = 1
+    while candidate.exists() or candidate.resolve() == fixed_resolved:
+        candidate = output_dir / f"{base}_{counter}{suffix}"
+        counter += 1
+    return candidate
+
+
+def create_title_named_pdf(
+    translation_path: Path,
+    markdown: str,
+    fixed_output_path: Path,
+) -> dict[str, object]:
+    info: dict[str, object] = {
+        "path": None,
+        "filename": None,
+        "title": None,
+        "truncated": False,
+        "error": None,
+    }
+    try:
+        title = extract_chinese_title(markdown)
+        if not title:
+            info["error"] = "未能从 translation_final.md 中识别中文标题。"
+            return info
+
+        filename = make_safe_chinese_filename(title)
+        if not filename:
+            info["error"] = "中文标题无法转换为有效的 Windows 文件名。"
+            info["title"] = title
+            return info
+
+        safe_title = make_safe_chinese_filename_stem(title)
+        info["title"] = title
+        info["filename"] = filename
+        info["truncated"] = len(safe_title) > 60
+
+        title_output_path = make_unique_output_path(fixed_output_path.parent, filename, fixed_output_path)
+        shutil.copy2(fixed_output_path, title_output_path)
+        info["path"] = title_output_path
+        info["filename"] = title_output_path.name
+    except Exception as exc:
+        info["error"] = f"生成中文标题 PDF 文件名失败：{exc}"
+    return info
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Export translated Markdown to PDF.")
+    parser.add_argument(
+        "--translation",
+        default="output/translation_final.md",
+        help="Final translation Markdown file.",
+    )
+    parser.add_argument(
+        "--figures-dir",
+        default="output/extracted_figures",
+        help="Directory containing extracted figures and figure_manifest.json.",
+    )
+    parser.add_argument(
+        "--output",
+        default="output/translation_final_inline_figures_final.pdf",
+        help="Output PDF path.",
+    )
+    parser.add_argument(
+        "--report",
+        default="output/figure_mapping_report.md",
+        help="Figure mapping report path.",
+    )
+    parser.add_argument(
+        "--inline-figures",
+        action="store_true",
+        help="Insert figures after the first in-body reference instead of appending a figure plate.",
+    )
+    return parser.parse_args()
+
+
+def register_chinese_font() -> tuple[str, Path]:
+    for font_path in FONT_CANDIDATES:
+        if not font_path.exists():
+            continue
+        try:
+            pdfmetrics.registerFont(TTFont("ChineseBody", str(font_path)))
+            return "ChineseBody", font_path
+        except Exception:
+            continue
+    raise RuntimeError("No usable Chinese font found in Windows font directory.")
+
+
+def parse_captions(markdown: str) -> dict[int, str]:
+    captions: dict[int, str] = {}
+    current: int | None = None
+    buffer: list[str] = []
+
+    def flush() -> None:
+        nonlocal buffer, current
+        if current is not None:
+            text = " ".join(line.strip() for line in buffer if line.strip())
+            captions[current] = re.sub(r"\s+", " ", text).strip()
+        buffer = []
+
+    for line in markdown.splitlines():
+        heading = re.match(r"^###\s+图\s*(\d+)\s*$", line.strip())
+        if heading:
+            flush()
+            current = int(heading.group(1))
+            continue
+        if current is not None and line.startswith("## "):
+            flush()
+            current = None
+            continue
